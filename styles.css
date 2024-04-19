@@ -1,0 +1,68 @@
+body {
+    font-family: 'Ubuntu', sans-serif; /* Utiliza la tipografía Ubuntu para el cuerpo del texto */
+    background-color: #111; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: url('img/BackgroundCorto3.png');
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el header */
+    background-repeat: no-repeat;
+    background-position: top; /* Alinea el top de la imagen con el top del header */
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.navbar {
+    font-size: 18px;
+}
+
+
+.logo {
+    max-height: 80px; /* Tamaño máximo del logo */
+}
+
+.navbar {
+    font-size: 18px; /* Tamaño de la fuente de la navegación */
+}
+
+
+
+.logo img {
+    height: 90px; /* Tamaño del logo */
+}
+
+.navbar {
+    background-color: transparent; /* Fondo transparente para la barra de navegación */
+    text-align: center; /* Centrar las opciones de navegación */
+}
+
+.navbar a {
+    display: inline-block; /* Convertir los enlaces en bloques para ajustar al contenido */
+    color: #d8d1d1; /* Color del texto de la barra de navegación */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Efecto de transición para el cambio de color al pasar el mouse */
+    border-radius: 10px; /* Añadir bordes redondeados */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el mouse sobre un enlace */
+}
+
+h3 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Añade un espacio en la parte superior del elemento h3 */
+}
