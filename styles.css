@@ -16,6 +16,15 @@ header {
     width: 100%;
 }
 
+.header-bar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(175, 172, 172, 0.234); 
+}
+
 @font-face {
     font-family: 'Hurme Geometric Sans No.2';
     src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
@@ -31,28 +40,29 @@ header {
 }
 
 .logo img {
-    height: 80px; /* Tamaño del logo */
+    height: 80px;
 }
 
 .navbar {
-    font-size: 18px; /* Tamaño de la fuente de la navegación */
-    background-color: transparent; /* Fondo transparente para la barra de navegación */
-    text-align: center; /* Centrar las opciones de navegación */
+    font-size: 18px; 
+    background-color: transparent;
+    text-align: center; 
     padding: 20px;
+    z-index: 1;
 }
 
 .navbar a {
-    display: inline-block; /* Convertir los enlaces en bloques para ajustar al contenido */
-    color: #d8d1d1; /* Color del texto de la barra de navegación */
+    display: inline-block;
+    color: #d8d1d1; 
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    transition: background-color 0.3s; /* Efecto de transición para el cambio de color al pasar el mouse */
-    border-radius: 10px; /* Añadir bordes redondeados */
+    transition: background-color 0.3s; 
+    border-radius: 10px; 
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el mouse sobre un enlace */
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 .separador {
