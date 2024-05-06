@@ -13,12 +13,17 @@ header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
-    background-image: url('img/BackgroundCorto3.png');
-    background-size: cover; /* Ajusta la imagen para cubrir completamente el header */
-    background-repeat: no-repeat;
-    background-position: top; /* Alinea el top de la imagen con el top del header */
+    align-items: center;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans No.2';
+    src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
+        url('/fonts/HurmeGeometricSans2-Thin.ttf') format('woff2'),
+        url('/fonts/HurmeGeometricSans2-Thin.woff') format('woff'),
+        url('/fonts/HurmeGeometricSans2-Thin.woff2') format('truetype');
+    font-style: normal;
 }
 
 .logo {
@@ -30,40 +35,94 @@ header {
 }
 
 
-.logo {
-    max-height: 80px; /* Tamaño máximo del logo */
+.logo img {
+    height: 80px; /* Tamaño del logo */
 }
 
 .navbar {
     font-size: 18px; /* Tamaño de la fuente de la navegación */
-}
-
-
-
-.logo img {
-    height: 90px; /* Tamaño del logo */
-}
-
-.navbar {
     background-color: transparent; /* Fondo transparente para la barra de navegación */
     text-align: center; /* Centrar las opciones de navegación */
+    padding: 20px;
 }
 
 .navbar a {
-    display: inline-block; /* Convertir los enlaces en bloques para ajustar al contenido */
-    color: #d8d1d1; /* Color del texto de la barra de navegación */
+    display: inline-block; 
+    color: #d8d1d1;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    transition: background-color 0.3s; /* Efecto de transición para el cambio de color al pasar el mouse */
-    border-radius: 10px; /* Añadir bordes redondeados */
+    transition: background-color 0.3s;
+    border-radius: 10px;
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el mouse sobre un enlace */
+    background-color: rgba(161, 155, 155, 0.218); 
 }
 
-h3 {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 20px; /* Añade un espacio en la parte superior del elemento h3 */
+.separador {
+    height: 120px;
+    width: 100%;
+    background-color: #ede6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.separador h2 {
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #2e2e2e;
+    margin: 0;
+}
+
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: -20px auto 0px;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 10s infinite alternate;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    16% {margin-left: 0%;}
+
+    20% {margin-left: -100%;}
+    36% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    56% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    76% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+}
+
+#fondoarq {
+    background-image: url('img/BackgroundCorto3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; 
+    height: 100vh;
+}
+
