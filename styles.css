@@ -1,11 +1,11 @@
 body {
-    font-family: 'Ubuntu', sans-serif; /* Utiliza la tipografía Ubuntu para el cuerpo del texto */
-    background-color: #111; /* Fondo gris oscuro */
-    color: #fff; /* Texto blanco */
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
+    background-color: #111; 
+    color: #fff;
+    font-weight: 800; 
     margin: 0;
     padding: 0;
 }
-
 
 header {
     position: absolute;
@@ -16,10 +16,22 @@ header {
     width: 100%;
 }
 
+@font-face {
+    font-family: 'Hurme Geometric Sans No.2';
+    src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
+        url('/fonts/HurmeGeometricSans2-Thin.ttf') format('woff2'),
+        url('/fonts/HurmeGeometricSans2-Thin.woff') format('woff'),
+        url('/fonts/HurmeGeometricSans2-Thin.woff2') format('truetype');
+    font-style: normal;
+}
+
 .logo {
     max-height: 80px; 
     padding: 20px;
+}
 
+.logo img {
+    height: 80px; /* Tamaño del logo */
 }
 
 .navbar {
@@ -27,10 +39,6 @@ header {
     background-color: transparent; /* Fondo transparente para la barra de navegación */
     text-align: center; /* Centrar las opciones de navegación */
     padding: 20px;
-}
-
-.logo img {
-    height: 80px; /* Tamaño del logo */
 }
 
 .navbar a {
@@ -47,79 +55,69 @@ header {
     background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el mouse sobre un enlace */
 }
 
-/* #fotos {
+.separador {
+    height: 120px;
     width: 100%;
-    height: auto;
-    display: block;
+    background-color: #ede6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#fotos img {
-    width: 100%; 
-    height: auto;
-}  */
-
-#fotos {
-    width: 100%;
-    overflow: hidden; /* Oculta el desplazamiento horizontal */
-    white-space: nowrap; /* Evita que las imágenes se rompan en varias líneas */
+.separador h2 {
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
+    font-size: 72px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #2e2e2e;
+    margin: 0;
 }
 
-#fotos img {
-    display: inline-block; /* Muestra las imágenes en línea */
-    vertical-align: top; /* Alinea las imágenes en la parte superior del contenedor */
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
-    transition: transform 5s linear; /* Agrega una transición suave al desplazamiento */
-    animation: slide 10s linear infinite; /* Inicia la animación para desplazar automáticamente */
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: -20px auto 0px;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 10s infinite alternate;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(-3%); /* Comienza sin desplazamiento */
-    }
-    16% {
-        transform: translateX(0); /* Mantiene la primera imagen en su lugar */
-    }
-    20% {
-        transform: translateX(-100%); /* Desplaza a la segunda imagen */
-    }
-    36% {
-        transform: translateX(-100%); /* Mantiene la segunda imagen en su lugar */
-    }
-    40% {
-        transform: translateX(-200%); /* Desplaza a la tercera imagen */
-    }
-    56% {
-        transform: translateX(-200%); /* Mantiene la tercera imagen en su lugar */
-    }
-    60% {
-        transform: translateX(-300%); /* Desplaza a la cuarta imagen */
-    }
-    76% {
-        transform: translateX(-300%); /* Mantiene la cuarta imagen en su lugar */
-    }
-    80% {
-        transform: translateX(-400%); /* Desplaza a la quinta imagen */
-    }
-    96% {
-        transform: translateX(-402%); /* Mantiene la quinta imagen en su lugar */
-    }
-    100% {
-        transform: translateX(0); /* Regresa a la primera imagen */
-    }
+    0% {margin-left: 0%;}
+    16% {margin-left: 0%;}
+
+    20% {margin-left: -100%;}
+    36% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    56% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    76% {margin-left: -300%;}
+
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
 }
 
 #fondoarq {
     background-image: url('img/BackgroundCorto3.png');
-    background-size: cover; /* Ajusta la imagen para cubrir completamente el header */
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top; /* Alinea el top de la imagen con el top del header */
+    background-position: top; 
     height: 100vh;
 }
 
-.separador {
-    height: 40px;
-    width: 100%;
-    background-color: #201e1e;
-    color: #201e1e
-}
