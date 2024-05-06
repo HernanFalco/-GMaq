@@ -28,9 +28,9 @@ header {
 @font-face {
     font-family: 'Hurme Geometric Sans No.2';
     src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
-        url('/fonts/HurmeGeometricSans2-Thin.ttf') format('woff2'),
-        url('/fonts/HurmeGeometricSans2-Thin.woff') format('woff'),
-        url('/fonts/HurmeGeometricSans2-Thin.woff2') format('truetype');
+        url('fonts/HurmeGeometricSans2-Thin.ttf') format('woff2'),
+        url('fonts/HurmeGeometricSans2-Thin.woff') format('woff'),
+        url('fonts/HurmeGeometricSans2-Thin.woff2') format('truetype');
     font-style: normal;
 }
 
