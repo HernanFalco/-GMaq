@@ -8,45 +8,29 @@ body {
 
 
 header {
-    position: relative;
+    position: absolute;
     background-color: transparent;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
-    background-image: url('img/BackgroundCorto3.png');
-    background-size: cover; /* Ajusta la imagen para cubrir completamente el header */
-    background-repeat: no-repeat;
-    background-position: top; /* Alinea el top de la imagen con el top del header */
+    align-items: center;
+    width: 100%;
 }
 
 .logo {
-    max-height: 40px;
-}
+    max-height: 80px; 
+    padding: 20px;
 
-.navbar {
-    font-size: 18px;
-}
-
-
-.logo {
-    max-height: 80px; /* Tamaño máximo del logo */
 }
 
 .navbar {
     font-size: 18px; /* Tamaño de la fuente de la navegación */
-}
-
-
-
-.logo img {
-    height: 90px; /* Tamaño del logo */
-}
-
-.navbar {
     background-color: transparent; /* Fondo transparente para la barra de navegación */
     text-align: center; /* Centrar las opciones de navegación */
+    padding: 20px;
+}
+
+.logo img {
+    height: 80px; /* Tamaño del logo */
 }
 
 .navbar a {
@@ -63,7 +47,79 @@ header {
     background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el mouse sobre un enlace */
 }
 
-h3 {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 20px; /* Añade un espacio en la parte superior del elemento h3 */
+/* #fotos {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#fotos img {
+    width: 100%; 
+    height: auto;
+}  */
+
+#fotos {
+    width: 100%;
+    overflow: hidden; /* Oculta el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que las imágenes se rompan en varias líneas */
+}
+
+#fotos img {
+    display: inline-block; /* Muestra las imágenes en línea */
+    vertical-align: top; /* Alinea las imágenes en la parte superior del contenedor */
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    transition: transform 5s linear; /* Agrega una transición suave al desplazamiento */
+    animation: slide 10s linear infinite; /* Inicia la animación para desplazar automáticamente */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-3%); /* Comienza sin desplazamiento */
+    }
+    16% {
+        transform: translateX(0); /* Mantiene la primera imagen en su lugar */
+    }
+    20% {
+        transform: translateX(-100%); /* Desplaza a la segunda imagen */
+    }
+    36% {
+        transform: translateX(-100%); /* Mantiene la segunda imagen en su lugar */
+    }
+    40% {
+        transform: translateX(-200%); /* Desplaza a la tercera imagen */
+    }
+    56% {
+        transform: translateX(-200%); /* Mantiene la tercera imagen en su lugar */
+    }
+    60% {
+        transform: translateX(-300%); /* Desplaza a la cuarta imagen */
+    }
+    76% {
+        transform: translateX(-300%); /* Mantiene la cuarta imagen en su lugar */
+    }
+    80% {
+        transform: translateX(-400%); /* Desplaza a la quinta imagen */
+    }
+    96% {
+        transform: translateX(-402%); /* Mantiene la quinta imagen en su lugar */
+    }
+    100% {
+        transform: translateX(0); /* Regresa a la primera imagen */
+    }
+}
+
+#fondoarq {
+    background-image: url('img/BackgroundCorto3.png');
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el header */
+    background-repeat: no-repeat;
+    background-position: top; /* Alinea el top de la imagen con el top del header */
+    height: 100vh;
+}
+
+.separador {
+    height: 40px;
+    width: 100%;
+    background-color: #201e1e;
+    color: #201e1e
 }
