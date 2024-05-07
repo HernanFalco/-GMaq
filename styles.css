@@ -28,9 +28,9 @@ header {
 @font-face {
     font-family: 'Hurme Geometric Sans No.2';
     src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
-        url('fonts/HurmeGeometricSans2-Thin.ttf') format('woff2'),
-        url('fonts/HurmeGeometricSans2-Thin.woff') format('woff'),
-        url('fonts/HurmeGeometricSans2-Thin.woff2') format('truetype');
+        url(fonts/HurmeGeometricSans2-Thin.ttf) format('woff2'),
+        url(fonts/HurmeGeometricSans2-Thin.woff) format('woff'),
+        url(fonts/HurmeGeometricSans2-Thin.woff2) format('truetype');
     font-style: normal;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .separador {
-    height: 120px;
+    height: 180px;
     width: 100%;
     background-color: #ede6e6;
     display: flex;
@@ -78,6 +78,7 @@ header {
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
     font-size: 72px;
     font-weight: 300;
+    text-align: center;
     background-color: transparent;
     color: #2e2e2e;
     margin: 0;
@@ -86,7 +87,7 @@ header {
 .slider-frame {
     width: 100%;
     height: auto;
-    margin: -20px auto 0px;
+    margin: -20px 0 -20px;
     overflow: hidden;
 }
 
@@ -104,6 +105,7 @@ header {
 
 .slider-frame img{
     width: 100%;
+    height: auto;
 }
 
 @keyframes slide {
@@ -124,10 +126,87 @@ header {
 }
 
 #fondoarq {
-    background-image: url('img/BackgroundCorto3.png');
+    background-image: url(img/BackgroundCorto3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top; 
     height: 100vh;
+}
+
+.proyecto {
+    height: 300px;
+    width: 100%;
+    background-color: #ede6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto h2 {
+    font-size: 72px;
+    font-weight: 300;
+    background-color: transparent;
+    color: #2e2e2e;
+    margin: 30px 0 40px;
+}
+
+.proyecto p {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 200;
+    color: #2e2e2e;
+    margin: 0 0 0px
+
+}
+
+/* Codigo de Braian */
+
+.general {
+    display: flex;
+    text-align: center;
+    height: 400px;
+    
+}
+
+.general-1 {
+    width: 50%;
+    background-color: #E1E2E6;
+    padding: 50px 50px 50px 50px;
+}
+
+.general-1 h2 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 120px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+    margin: 50px 0 0;
+}
+
+.general-1 p {
+    font-weight: 200;
+    font-family: "Poppins";
+    font-size: 20px;
+    color: #2e2e2e;
+    margin: 0;
+}
+
+.general-2 {
+    background-image: url(img/santafe.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px 50px 50px;
+    width: 50%;
+}
+
+.general-3 {
+    background-image: url(img/osaka.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px 50px 50px;
+    width: 50%;
 }
 
