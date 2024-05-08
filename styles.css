@@ -16,17 +16,6 @@ body {
     padding: 0;
 }
 
-
-
-.header-bar {
-    position: absolute;
-    top: 15px;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background-color: rgba(175, 172, 172, 0.234); 
-}
-
 @font-face {
     font-family: 'Hurme Geometric Sans No.2';
     src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
@@ -36,9 +25,21 @@ body {
     font-style: normal;
 }
 
+.header-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(85, 82, 82, 0.381); 
+}
+
 .logo {
     max-height: 80px; 
-    padding: 20px;
+    padding: 5px;
 }
 
 .logo img {
@@ -48,8 +49,9 @@ body {
 .navbar {
     font-size: 18px; 
     background-color: transparent;
-    text-align: center; 
-    padding: 20px;
+    text-align: right; 
+    padding: 0px;
+    margin-left: auto;
     z-index: 1;
 }
 
@@ -57,7 +59,7 @@ body {
     display: inline-block;
     color: #d8d1d1; 
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px 10px;
     text-decoration: none;
     transition: background-color 0.3s; 
     border-radius: 10px; 
@@ -161,6 +163,31 @@ body {
     margin: 0 0 0px
 
 }
+
+#back_to_top {
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    background-color: #7c8084db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#back_to_top:hover {
+    background-color: #4c4d4dda;
+}
+
+#back_to_top.show {
+    display: block;
+}
+
 
 /* Codigo de Braian */
 
