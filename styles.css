@@ -31,11 +31,13 @@ body {
     justify-content: space-between;
     align-items: center;
     top: 15px;
-    left: 0;
-    width: 100%;
+    left: 2.5%;
+    width: 95%;
     height: 90px;
     background-color: rgba(166, 161, 161, 0.659); 
     margin: 0;
+    border-radius: 10px;
+    top: 3%;
 }
 
 .logo {
@@ -51,7 +53,6 @@ body {
     font-size: 18px; 
     background-color: transparent;
     text-align: right; 
-    padding: 0px;
     margin-left: auto;
     z-index: 1;
 }
@@ -78,11 +79,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    margin-bottom: 1.1%;
 }
 
 .separador h2 {
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
-    font-size: 72px;
+    font-size: 4em;
     font-weight: 300;
     text-align: center;
     background-color: transparent;
@@ -93,8 +96,9 @@ body {
 .slider-frame {
     width: 100%;
     height: auto;
-    margin: -20px 0 -20px;
     overflow: hidden;
+    background-color: #0ae341;
+    border-radius: 1%;
 }
 
 .slider-frame ul {
@@ -137,16 +141,21 @@ body {
     background-repeat: no-repeat;
     background-position: top; 
     height: 100vh;
+    border-radius: 10px;
+    margin-bottom: 0.7%;
 }
 
 .proyecto {
-    height: 300px;
+    height: 260px;
     width: 100%;
     background-color: #ede6e6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .proyecto h2 {
@@ -169,13 +178,13 @@ body {
 #back_to_top {
     display: none;
     position: fixed;
-    bottom: 120px;
-    right: 60px;
-    width: 60px;
-    height: 60px;
+    bottom: 320px;
+    right: 70px;
+    width: 70px;
+    height: 70px;
     font-size: 14px;
     font-family: monospace;
-    background-color: #7c8084d4;
+    background-color: #5f6468b4;
     color: white;
     border: none;
     border-radius: 50%;
@@ -184,7 +193,7 @@ body {
 }
 
 #back_to_top:hover {
-    background-color: #4c4d4dda;
+    background-color: #f2f8f895;
 }
 
 #back_to_top.show {
@@ -197,8 +206,7 @@ body {
     display: flex;
     text-align: center;
     height: 400px;
-    max-height: 400px;
-    
+    max-height: 400px; 
 }
 
 .general-1 {
@@ -241,11 +249,11 @@ body {
     background-size: cover;
     padding: 50px 50px 50px 50px;
     width: 50%;
-}
+} 
 
 footer {
     background-color: #2e2e2e;
-    color: #fff;
+    color: #ffffff;
     padding: 120px 00px 0px 0px;
 }
 
@@ -289,9 +297,10 @@ footer {
 
 .copyright {
     display: flex;
-    background-color: #fff;
+    background-color: #ffffff;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 .copyright ul {
