@@ -346,11 +346,27 @@ footer {
     text-decoration: none;
     font-size: 15px; 
     align-items: center;
+    display: inline-flex; /* Para alinear los elementos internos */
+    justify-content: center; /* Para centrar horizontalmente */
+    width: 45px; /* Ajusta el tamaño del contenedor del ícono */
+    height: 45px; /* Ajusta el tamaño del contenedor del ícono */
+    border-radius: 50%; /* Hace que el borde sea redondo */
+    background-color: #dbcdcd72;
+    transition: background-color 0.3s, color 0.3s; /* Añade una transición suave */
 }
 
 .link ul li a i {
     font-size: 25px;
     color: #ede6e6;
+}
+
+.link ul li a:hover {
+    background-color: #ede6e6; 
+    color: #534f4f; 
+}
+
+.link ul li a:hover i {
+    color: #534f4f; 
 }
 
 .derechos {
