@@ -12,7 +12,7 @@ body {
     background-color: #3f3c3c; 
     color: #fff;
     font-weight: 800; 
-    margin: 0.6%;
+    margin: 0.8%;
     padding: 0;
 }
 
@@ -308,34 +308,32 @@ body {
 }  */
 
 footer {
-    background-color: #2e2e2e;
-    color: #ffffff;
+    background-color: #979782;
     border-radius: 15px;
 }
 
 .container {
+    height: 300px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 40px;
-    padding-right: 30px;
-    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .link {
     display: inline-block;
-    margin-bottom: 0.7%;
+    padding-top: 100px;
 }
 
 .link ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
 }
 
 .link ul li {
-    display: block;
-    margin-bottom: 30px;
+    display: inline-block;
+    margin-right: 20px;
+
 }
 
 .link ul li a {
@@ -346,35 +344,19 @@ footer {
 }
 
 .link ul li a i {
-    font-size: 20px;
+    font-size: 25px;
     color: #ede6e6;
-    padding-top: 10px;
-    justify-content: right
 }
 
-.copyright {
-    display: flex;
-    background-color: #ffffff;
-    flex-direction: row;
-    justify-content: space-around;
-    border-radius: 0 0 15px 15px;
+.derechos {
+    padding-top: 100px;
+    font-family: "Poppins", sans-serif
 }
 
-.copyright ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.derechos p{
+    font-weight: normal;
 }
 
-.copyright ul li {
-    display: inline-block;
-    color: #060606;
-    font-size: 14px;
-    margin: 0;
-}
-
-.copyright ul li i {
-    color: #1d1d1d92;
-    margin: 0;
-    font-size: 13px;
+.derechos {
+    font-weight: bold;
 }
