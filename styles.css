@@ -9,10 +9,10 @@ header {
 
 body {
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
-    background-color: #111; 
+    background-color: #3f3c3c; 
     color: #fff;
     font-weight: 800; 
-    margin: 1%;
+    margin: 0.6%;
     padding: 0;
 }
 
@@ -34,10 +34,11 @@ body {
     left: 2.5%;
     width: 95%;
     height: 90px;
-    background-color: rgba(166, 161, 161, 0.659); 
+    background-color: rgba(166, 161, 161, 0.779); 
     margin: 0;
-    border-radius: 10px;
-    top: 3%;
+    border-radius: 15px;
+    top: 3.2%;
+    z-index: 1;
 }
 
 .logo {
@@ -65,7 +66,7 @@ body {
     padding: 10px 10px;
     text-decoration: none;
     transition: background-color 0.3s; 
-    border-radius: 10px; 
+    border-radius: 15px; 
 }
 
 .navbar a:hover {
@@ -79,8 +80,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-bottom: 1.1%;
+    border-radius: 15px;
+    margin-bottom: 0.7%;
 }
 
 .separador h2 {
@@ -95,27 +96,33 @@ body {
 
 .slider-frame {
     width: 100%;
-    height: auto;
-    overflow: hidden;
-    background-color: #0ae341;
-    border-radius: 1%;
+    height: 100%;
+    display: flex;
 }
 
-.slider-frame ul {
+.slider {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+.slider ul {
     display: flex;
     padding: 0;
     width: 500%;
+    margin: 0;
     animation: slide 10s infinite alternate;
 }
 
-.slider-frame li {
+.slider li {
     list-style: none;
     width: 100%;
 }
 
-.slider-frame img{
+.slider img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @keyframes slide {
@@ -141,21 +148,21 @@ body {
     background-repeat: no-repeat;
     background-position: top; 
     height: 100vh;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 0.7%;
 }
 
 .proyecto {
-    height: 260px;
+    height: 240px;
     width: 100%;
     background-color: #ede6e6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    border-radius: 15px;
+    margin-bottom: 0.7%;
+    margin-top: 0.7%;
 }
 
 .proyecto h2 {
@@ -200,13 +207,62 @@ body {
     display: block;
 }
 
+
+.cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 0.7%;
+    flex: 1;
+    margin-bottom: 0.7%;
+}
+
+.card {
+    width: 50%;
+    border-radius: 15px;
+    height: 600px;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.text {
+    color: #2e2e2e;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text h3 {
+    font-size: 400%;
+    font-weight: 200;
+    margin: 0;
+}
+
+.text p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    font-style: italic;
+}
 /* Codigo de Braian */
 
-.general {
+/* .general {
     display: flex;
     text-align: center;
     height: 400px;
-    max-height: 400px; 
+    max-height: 400px;
+    margin-bottom: 20px;
+    background-color: #0ae341;
 }
 
 .general-1 {
@@ -249,12 +305,12 @@ body {
     background-size: cover;
     padding: 50px 50px 50px 50px;
     width: 50%;
-} 
+}  */
 
 footer {
     background-color: #2e2e2e;
     color: #ffffff;
-    padding: 120px 00px 0px 0px;
+    border-radius: 15px;
 }
 
 .container {
@@ -268,6 +324,7 @@ footer {
 
 .link {
     display: inline-block;
+    margin-bottom: 0.7%;
 }
 
 .link ul {
@@ -300,7 +357,7 @@ footer {
     background-color: #ffffff;
     flex-direction: row;
     justify-content: space-around;
-
+    border-radius: 0 0 15px 15px;
 }
 
 .copyright ul {
