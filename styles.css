@@ -1,3 +1,4 @@
+
 header {
     position: absolute;
     background-color: transparent;
@@ -11,7 +12,7 @@ body {
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
     background-color: #3f3c3c; 
     color: #fff;
-    font-weight: 800; 
+    /* font-weight: 800;  */
     margin: 0.8%;
     padding: 0;
 }
@@ -34,7 +35,7 @@ body {
     left: 2.5%;
     width: 95%;
     height: 90px;
-    background-color: rgba(166, 161, 161, 0.779); 
+    background-color: #979782dc; 
     margin: 0;
     border-radius: 15px;
     top: 3.2%;
@@ -43,7 +44,7 @@ body {
 
 .logo {
     max-height: 80px; 
-    padding: 5px;
+    padding: 20px;
 }
 
 .logo img {
@@ -54,6 +55,7 @@ body {
     font-size: 18px; 
     background-color: transparent;
     text-align: right; 
+    padding-right: 20px;
     margin-left: auto;
     z-index: 1;
 }
@@ -86,11 +88,11 @@ body {
 
 .separador h2 {
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
-    font-size: 4em;
-    font-weight: 300;
+    font-size: 4.5rem;
+    font-weight: 600;
     text-align: center;
     background-color: transparent;
-    color: #2e2e2e;
+    color: #534f4f;
     margin: 0;
 }
 
@@ -153,7 +155,7 @@ body {
 }
 
 .proyecto {
-    height: 240px;
+    height: 230px;
     width: 100%;
     background-color: #ede6e6;
     display: flex;
@@ -166,11 +168,11 @@ body {
 }
 
 .proyecto h2 {
-    font-size: 72px;
-    font-weight: 300;
+    font-size: 5em;
+    font-weight: 600;
     background-color: transparent;
-    color: #2e2e2e;
-    margin: 30px 0 40px;
+    color: #534f4f;
+    margin: 0;
 }
 
 .proyecto p {
@@ -178,7 +180,7 @@ body {
     font-size: 20px;
     font-weight: 200;
     color: #2e2e2e;
-    margin: 0 0 0px
+    margin: 15px 0 0 0
 
 }
 
@@ -200,7 +202,7 @@ body {
 }
 
 #back_to_top:hover {
-    background-color: #f2f8f895;
+    background-color: #989e9ec2;
 }
 
 #back_to_top.show {
@@ -232,7 +234,7 @@ body {
 }
 
 .text {
-    color: #2e2e2e;
+    color: #534f4f;
     height: 100%;
     width: 100%;
     display: flex;
@@ -249,10 +251,12 @@ body {
 }
 
 .text p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin: 0;
+    font-family: "system-ui";
+    font-weight: 200;
     font-style: italic;
+    color: #3b3737d8;
+    font-size: 1.5rem;
+    margin: 0;
 }
 /* Codigo de Braian */
 
@@ -350,7 +354,6 @@ footer {
 
 .derechos {
     padding-top: 100px;
-    font-family: "Poppins", sans-serif
 }
 
 .derechos p{
