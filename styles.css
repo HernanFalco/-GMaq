@@ -77,6 +77,61 @@ body {
     background-color: rgba(255, 255, 255, 0.2); 
 }
 
+.dropbtn {
+    display: inline-block;
+    color: #ffffff; 
+    font-family: "Hurme Geometric Sans No.2";
+    font-size: 18px; /* Mismo tamaño de fuente que navbar */
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    border-radius: 15px; 
+    background-color: transparent; /* Botón transparente por defecto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+}
+
+.dropbtn:hover { /* Añadimos estilo al enfocar */
+    background-color: rgba(255, 255, 255, 0.2); /* Color al pasar el ratón */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px; /* Ajusta el margen superior para separar del header */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #97978200;
+    min-width: 160px;
+    padding-top: 30px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f67e07;
+    font-weight: 700;
+    margin-right: 40px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ede6e6;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .separador {
     height: 180px;
     width: 100%;
