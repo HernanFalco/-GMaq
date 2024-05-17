@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;    
+    background-image:url("/img/lamparas.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+            /* HEADER */
+.header-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 15px;
+    left: 2.5%;
+    width: 95%;
+    height: 90px;
+    background-color: rgba(166, 161, 161, 0.659); 
+    margin: 0;
+    border-radius: 10px;
+    top: 3%;
+}
+
+.logo {
+    max-height: 80px; 
+    padding: 5px;
+}
+
+.logo img {
+    height: 80px;
+}
+/* 
+        Barra de navegacion - Header */
+
+.navbar {
+    font-size: 18px; 
+    background-color: transparent;
+    text-align: right; 
+    margin-left: auto;
+    z-index: 1;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #ffffff; 
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    border-radius: 10px; 
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+            /* FORMULARIO */
+
+form {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    align-items: center;
+    padding-top: 150px;
+}
+
+.input{
+    /* display: flex; */
+    flex-direction: column;
+    text-align: left;
+}
+
+input,textarea {
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 0 0 20px 0;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none ;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+
+        /* Radio button */
+.input_radio {
+    margin-bottom: 30px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    display: flex;
+}
+
+.input_radio input {
+    width: 50%;
+}
+
+        /* Link términos y condiciones */
+.input_radio a{
+    margin-bottom: 30px;
+    justify-content: space-between;
+    color: rgba(165, 82, 46, 0.98);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+    
+}
+
+        /* Botón enviar consulta */
+.btn{
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(183,113,15,0.5);  
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(235, 80, 16, 0.42)
+}
+
+
+
+@media only screen and (max-width:600px) {
+  
+    .navbar{
+        display: flex;
+        float: right;
+    }
+    form {
+        width:100%;
+    }
+}
+
+
+            /* FOOTER */
+
+footer {
+    background-color: #979782;
+    border-radius: 15px;
+}
+
+.container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.link {
+    display: inline-block;
+    padding-top: 100px;
+}
+
+.link ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.link ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.link ul li a {
+    color: #ede6e6;
+    text-decoration: none;
+    font-size: 15px; 
+    align-items: center;
+    display: inline-flex; /* Para alinear los elementos internos */
+    justify-content: center; /* Para centrar horizontalmente */
+    width: 45px; /* Ajusta el tamaño del contenedor del ícono */
+    height: 45px; /* Ajusta el tamaño del contenedor del ícono */
+    border-radius: 50%; /* Hace que el borde sea redondo */
+    background-color: #dbcdcd72;
+    transition: background-color 0.3s, color 0.3s; /* Añade una transición suave */
+}
+
+.link ul li a i {
+    font-size: 25px;
+    color: #ede6e6;
+}
+
+.link ul li a:hover {
+    background-color: #ede6e6; 
+    color: #534f4f; 
+}
+
+.link ul li a:hover i {
+    color: #534f4f; 
+}
+
+.derechos {
+    padding-top: 100px;
+}
+
+.derechos p{
+    font-weight: normal;
+}
+
+.derechos {
+    font-weight: bold;
+}

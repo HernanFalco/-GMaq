@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style1.css">
+    <title>Consultas</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-bar">
+            <div class="logo">
+                <img src="img/GMLogo2.png" alt="Logo">
+            </div>
+            <nav class="navbar">
+                <a href="#"><b>HOME</b></a>
+                <a href="#">PROYECTOS</a>
+                <a href="#">OBRAS</a>
+                <a href="#">CONTACTO</a>
+                <a href="#">SOBRE MI</a>
+            </nav>
+        </section>
+    </header>
+
+     <form class= "form">
+        <h2>Contacto</h2>
+    
+        <div class="input">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Número de telefono">
+            
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+           
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escribe aqui tu consulta"></textarea>
+        </div>
+
+        <div class="input_radio">
+            <input type="radio" id="acepto_condiciones" value="acepto_condiciones">
+            <label for="acepto_condiciones"><a href="#">Acepto términos y condiciones</a></label>
+        </div>
+
+            <input class="btn" type="submit" value="Enviar consulta">
+
+    </form>  
+    
+    
+</body>
+</html>
