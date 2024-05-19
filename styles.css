@@ -133,7 +133,7 @@ body {
 }
 
 .separador {
-    height: 180px;
+    height: 230px;
     width: 100%;
     background-color: #ede6e6;
     display: flex;
@@ -151,6 +151,8 @@ body {
     background-color: transparent;
     color: #534f4f;
     margin: 0;
+    white-space: nowrap;
+    transform-origin: center;
 }
 
 .slider-frame {
