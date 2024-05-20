@@ -246,14 +246,14 @@ body {
 #back_to_top {
     display: none;
     position: fixed;
-    bottom: 320px;
+    bottom: 150px;
     right: 70px;
     width: 70px;
     height: 70px;
     font-size: 14px;
     font-family: monospace;
     background-color: #5f6468b4;
-    color: white;
+    color:#ede6e6;
     border: none;
     border-radius: 50%;
     cursor: pointer;
