@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMAQ | Arquitectura</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="img/GM.ico" type="image/x-icon">
 </head>
@@ -13,18 +13,25 @@
 <header>
     <section class="header-bar">
         <div class="logo">
-            <img src="img/GMLogo2.png" alt="Logo">
+            <a href="index.html"><img src="img/GMLogo2.png" alt="Logo"></a>
         </div>
         <nav class="navbar">
             <a href="index.html"><b>HOME</b></a>
             <div class="dropdown">
                 <button class="dropbtn">PROYECTOS</button>
                     <div class="dropdown-content">
-                        <a href="#">SANTA FE</a>
-                        <a href="#">OSAKA</a>
+                        <a href="santaFe.html">SANTA FE</a>
+                        <a href="osaka.html">OSAKA</a>
                     </div>
             </div>
-            <a href="#">OBRAS</a>
+            <div class="dropdown"><button class="dropbtn">PROYECTOS</button>
+                <div class="dropdown-content">
+                    <a href="#">BILLINGHURST</a>
+                    <a href="#">C. LARRALDE</a>
+                    <a href="#">ALTOAGUIRRE</a>
+                    <a href="#">LACARRA</a>
+                </div>
+            </div>
             <a href="#">CONTACTO</a>
             <a href="#">NOSOTROS</a>
         </nav>
@@ -57,25 +64,23 @@
         <div class="row">
             <div class="card" style="background-color: #ffffff;">
                 <div class="text">
-                    <h3>SANTA FE</h3>
+                    <a href= "santaFe.html"><h3>SANTA FE</h3></a>
                     <p>Cocina / Coffee Station</p>
                 </div>   
             </div>  
-                <div class="card" style="background-image: url(./img/osaka.png)"> </div>
+                <div class="card" style="background-image: url(./img/santafe.png)"> </div>
         </div>
         <div class="row">
-            <div class="card" style="background-image: url(./img/santafe.png)"> </div>
+            <div class="card" style="background-image: url(./img/osaka.png)"> </div>
             <div class="card" style="background-color: #ffffff;">
                 <div class="text">
-                    <h3>OSAKA</h3>
+                    <a href="osaka.html"><h3>OSAKA</h3></a>
                     <p>Cocina / Kitchen</p>
                 </div>   
             </div>    
         </div>      
     </div>
 
-
-<!-- Codigo de Braian -->
 
 <footer>
     <section class="container">

@@ -81,26 +81,26 @@ body {
     display: inline-block;
     color: #ffffff; 
     font-family: "Hurme Geometric Sans No.2";
-    font-size: 18px; /* Mismo tamaño de fuente que navbar */
+    font-size: 18px; 
     font-weight: 500;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
     transition: background-color 0.3s; 
     border-radius: 15px; 
-    background-color: transparent; /* Botón transparente por defecto */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
 }
 
-.dropbtn:hover { /* Añadimos estilo al enfocar */
-    background-color: rgba(255, 255, 255, 0.2); /* Color al pasar el ratón */
+.dropbtn:hover { 
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-top: 10px; /* Ajusta el margen superior para separar del header */
+    margin-top: 10px;
 }
 
 .dropdown-content {
@@ -303,6 +303,16 @@ body {
     text-align: center;
 }
 
+.text a{
+    color: #534f4f;
+    text-decoration: none;
+}
+
+.text a:hover {
+    color:#f67e07;
+    font-weight: 800;
+}
+
 .text h3 {
     font-size: 400%;
     font-weight: 200;
@@ -316,58 +326,6 @@ body {
     font-size: 1.5rem;
     margin: 0;
 }
-/* Codigo de Braian */
-
-/* .general {
-    display: flex;
-    text-align: center;
-    height: 400px;
-    max-height: 400px;
-    margin-bottom: 20px;
-    background-color: #0ae341;
-}
-
-.general-1 {
-    width: 50%;
-    background-color: #dedada;
-    padding: 50px 50px 50px 50px;
-}
-
-.general-1 h2 {
-    font-size: 55px;
-    font-weight: 400;
-    color: #2e2e2e;
-    line-height: 120px;
-    text-transform: uppercase;
-    margin: 50px 0 0;
-}
-
-.general-1 p {
-    font-weight: 200;
-    font-family: "system-ui";
-    font-size: 20px;
-    color: #2e2e2e;
-    margin: 0;
-}
-
-.general-2 {
-    height: 400px;
-    background-image: url(img/santafe.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 50px 50px 50px;
-    width: 50%;
-}
-
-.general-3 {
-    background-image: url(img/osaka.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 50px 50px 50px;
-    width: 50%;
-}  */
 
 footer {
     background-color: #979782;
@@ -403,13 +361,13 @@ footer {
     text-decoration: none;
     font-size: 15px; 
     align-items: center;
-    display: inline-flex; /* Para alinear los elementos internos */
-    justify-content: center; /* Para centrar horizontalmente */
-    width: 45px; /* Ajusta el tamaño del contenedor del ícono */
-    height: 45px; /* Ajusta el tamaño del contenedor del ícono */
-    border-radius: 50%; /* Hace que el borde sea redondo */
+    display: inline-flex;
+    justify-content: center; 
+    width: 45px; 
+    height: 45px;
+    border-radius: 50%; 
     background-color: #dbcdcd72;
-    transition: background-color 0.3s, color 0.3s; /* Añade una transición suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .link ul li a i {
@@ -436,4 +394,91 @@ footer {
 
 .derechos {
     font-weight: bold;
+}
+
+
+
+
+/* SANTE FE */
+
+#sF {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.video-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+    color: #534f4f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.text-box h2 {
+    margin: 0;
+    color: #ede6e6;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.pdf-box {
+    position: relative;
+    width: 100%;
+}
+
+.card2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7%;
+}
+
+.card2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.card2 ul li {
+    width: 100%;
+    margin-bottom: 0.7%; 
+}
+
+.card2 ul li img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.margen {
+    margin-top: 0.7%;
 }
