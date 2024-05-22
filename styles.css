@@ -484,3 +484,39 @@ footer {
 .margen {
     margin-top: 0.7%;
 }
+
+
+
+#uS {
+    background-image: url(img/bNosotros.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top; 
+    position: relative;
+    height: 600px;
+    border-radius: 15px;
+    margin-bottom: 0.7%;
+}
+
+.uSfondo {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
