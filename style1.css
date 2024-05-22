@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'poppins', sans-serif;
-    color: #fff; /* Texto blanco */
-    margin: 0;
+            /* HEADER */
+header {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+
+            /* BODY PAGINA NOSOTRAS */
+ body   {
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
+    margin: 0.8%;
+    color: #fff; 
     padding: 0;    
     background-image:url("/img/lamparas.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-   
 }
 
-            /* HEADER */
+@font-face {
+    font-family: 'Hurme Geometric Sans No.2';
+    src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
+        url(fonts/HurmeGeometricSans2-Thin.ttf) format('woff2'),
+        url(fonts/HurmeGeometricSans2-Thin.woff) format('woff'),
+        url(fonts/HurmeGeometricSans2-Thin.woff2) format('truetype');
+    font-style: normal;
+}
+
 .header-bar {
     position: fixed;
     display: flex;
@@ -23,32 +44,35 @@ body{
     top: 15px;
     left: 2.5%;
     width: 95%;
-    height: 90px;
-    background-color: rgba(166, 161, 161, 0.659); 
+    height: 75px;
+    background-color: #979782dc; 
     margin: 0;
-    border-radius: 10px;
-    top: 3%;
+    border-radius: 15px;
+    top: 3.2%;
+    z-index: 1;
 }
 
 .logo {
-    max-height: 80px; 
-    padding: 5px;
+    max-height: 65px; 
+    padding: 20px;
 }
 
 .logo img {
-    height: 80px;
+    height: 65px;
 }
+
 /* 
         Barra de navegacion - Header */
 
 .navbar {
-    font-size: 18px; 
+    font-size: 14px; 
     background-color: transparent;
     text-align: right; 
+    padding-right: 20px;
     margin-left: auto;
     z-index: 1;
 }
-
+        
 .navbar a {
     display: inline-block;
     color: #ffffff; 
@@ -57,11 +81,52 @@ body{
     padding: 10px 10px;
     text-decoration: none;
     transition: background-color 0.3s; 
-    border-radius: 10px; 
+    border-radius: 15px; 
 }
-
+        
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.dropbtn:hover { 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    background-color: #97978200;
+    min-width: 160px;
+    padding-top: 30px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f67e07;
+    font-weight: 700;
+    margin-right: 60px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ede6e6;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
             /* FORMULARIO */
@@ -98,29 +163,27 @@ input::placeholder, textarea::placeholder {
     color: #b5cab6;
 }
 
-        /* Radio button */
-.input_radio {
+        /* checkbox*/
+.input_checkbox {
     margin-bottom: 30px;
     margin: 0 0 20px 0;
     width: 100%;
     display: flex;
 }
 
-.input_radio input {
-    width: 50%;
+.input_checkbox input {
+    width: 30%;
 }
 
         /* Link términos y condiciones */
-.input_radio a{
+.input_checkbox a{
     margin-bottom: 30px;
     justify-content: space-between;
     color: rgba(165, 82, 46, 0.98);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    text-align: center;
-
-    
+    text-align: center;    
 }
 
         /* Botón enviar consulta */
@@ -132,10 +195,21 @@ input::placeholder, textarea::placeholder {
     background-color: black;
     box-shadow: 0 0 20px rgba(183,113,15,0.5);  
     cursor: pointer;
+    width: 70%;
 }
 
+        /* Hover de boton enviar */
 .btn:hover{
     background-color: rgba(235, 80, 16, 0.42)
+}
+
+        /* ventana de javascrips para campos de form no completado */
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: burlywood;
+    padding-top: 20px;
 }
 
 
@@ -160,11 +234,11 @@ footer {
 }
 
 .container {
-    height: 200px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .link {
@@ -186,19 +260,19 @@ footer {
 .link ul li a {
     color: #ede6e6;
     text-decoration: none;
-    font-size: 15px; 
+    font-size: 12px; 
     align-items: center;
-    display: inline-flex; /* Para alinear los elementos internos */
-    justify-content: center; /* Para centrar horizontalmente */
-    width: 45px; /* Ajusta el tamaño del contenedor del ícono */
-    height: 45px; /* Ajusta el tamaño del contenedor del ícono */
-    border-radius: 50%; /* Hace que el borde sea redondo */
+    display: inline-flex;
+    justify-content: center; 
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%; 
     background-color: #dbcdcd72;
-    transition: background-color 0.3s, color 0.3s; /* Añade una transición suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .link ul li a i {
-    font-size: 25px;
+    font-size: 20px;
     color: #ede6e6;
 }
 
@@ -213,6 +287,7 @@ footer {
 
 .derechos {
     padding-top: 100px;
+    font-size: 14px;
 }
 
 .derechos p{

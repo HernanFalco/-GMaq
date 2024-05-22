@@ -11,44 +11,93 @@
     <header>
         <section class="header-bar">
             <div class="logo">
-                <img src="img/GMLogo2.png" alt="Logo">
+                <a href="index.html"><img src="img/GMLogo2.png" alt="Logo"></a>
             </div>
             <nav class="navbar">
-                <a href="#"><b>HOME</b></a>
-                <a href="#">PROYECTOS</a>
-                <a href="#">OBRAS</a>
+                <a href="index.html"><b>HOME</b></a>
+                <div class="dropdown">
+                    <button class="dropbtn">PROYECTOS</button>
+                        <div class="dropdown-content">
+                            <a href="santaFe.html">SANTA FE</a>
+                            <a href="osaka.html">OSAKA</a>
+                        </div>
+                </div>
+                <div class="dropdown"><button class="dropbtn">OBRAS</button>
+                    <div class="dropdown-content">
+                        <a href="#">BILLINGHURST</a>
+                        <a href="#">C. LARRALDE</a>
+                        <a href="#">ALTOAGUIRRE</a>
+                        <a href="#">LACARRA</a>
+                    </div>
+                </div>
                 <a href="#">CONTACTO</a>
-                <a href="#">SOBRE MI</a>
+                <a href="#">NOSOTROS</a>
             </nav>
         </section>
     </header>
 
-     <form class= "form">
+     <form class= "form" id="form" method="post" action="" name="form"> 
         <h2>Contacto</h2>
     
         <div class="input">
+            <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
-            
+            <input type="text" name="name" id="name" placeholder="Nombre" >
+            </div>
+
+            <div>
             <label for="telefono">Teléfono</label>
             <input type="tel" name="phone" id="phone" placeholder="Número de telefono">
-            
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="E-mail">
-           
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escribe aqui tu consulta"></textarea>
-        </div>
+            </div>
 
-        <div class="input_radio">
-            <input type="radio" id="acepto_condiciones" value="acepto_condiciones">
+            <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" >
+            </div> 
+           
+            <div>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escribe aqui tu consulta" ></textarea>
+            </div>
+         </div>
+
+        <div class="input_checkbox">
+            <input type="checkbox" id="acepto_condiciones" name="acepto_condiciones" >
             <label for="acepto_condiciones"><a href="#">Acepto términos y condiciones</a></label>
         </div>
 
-            <input class="btn" type="submit" value="Enviar consulta">
-
+            <input type="submit" onclick ='return enviarFormulario()' value="Enviar consulta" class="btn">
     </form>  
+
+    <div id="error"></div>
+
+    <footer>
+        <section class="container">
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
+                    </li>
+                    <li> 
+                        <a href="https://www.instagram.com/gmaq.arq/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/rocio-pilar-garcia-maquieira-6b5850118/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                    </li>
+                    <li>
+                        <a href=""> <i class="fa-solid fa-envelope"></i> </a>
+                    </li>
+                </ul>
+             </div>
+            
+            <div class="derechos">
+                <p>&#169 2019-2024 | <b>GMAQ.</b> | Todos los derechos reservados.</p>
+            </div>
+        </section>
+    </footer>
     
-    
+        <button id="back_to_top">&#8593;</button>
+   
+<script src="/index1.js"></script> 
 </body>
 </html>
