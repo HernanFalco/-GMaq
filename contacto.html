@@ -39,28 +39,30 @@
 </header>
 
 
+<section id="contacto">
+
     <form class= "form" id="form" method="post" action="" name="form"> 
         <h2>Contacto</h2>
 
         <div class="input">
             <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre" >
+            <input type="text" name="name" id="name" placeholder="Nombre Completo" >
             </div>
 
             <div>
             <label for="telefono">Teléfono</label>
-            <input type="tel" name="phone" id="phone" placeholder="Número de telefono">
+            <input type="tel" name="phone" id="phone" placeholder="Celular">
             </div>
 
             <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" >
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="E-Mail" >
             </div> 
         
             <div>
             <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escribe aqui tu consulta" ></textarea>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Contanos de tu proyecto" ></textarea>
             </div>
         </div>
 
@@ -69,10 +71,12 @@
             <label for="acepto_condiciones"><a href="#">Acepto términos y condiciones</a></label>
         </div>
 
-            <input type="submit" onclick ='return enviarFormulario()' value="Enviar consulta" class="btn">
+            <input type="submit" onclick ='return enviarFormulario()' value="Enviar" class="btn">
     </form>  
 
     <div id="error"></div>
+
+</section>
 
 
 

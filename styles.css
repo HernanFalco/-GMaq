@@ -581,8 +581,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -610,26 +608,37 @@ footer {
     border-radius: 10px;
 }
 
+#contacto {
+    background-image: url(img/lamparas.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top; 
+    position: relative;
+    height: 1500px;
+    border-radius: 15px;
+    margin-bottom: 0.7%;
+}
 
 form {
-    width: 40%;
+    width: 25%;
     height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: left; */
-    align-items: center;
-    padding-top: 150px;
+    /* align-items: center; */
+    padding-top: 300px;
 }
 
 .input{
-    /* display: flex; */
     flex-direction: column;
     text-align: left;
+    font-weight: 600;
 }
 
 input,textarea {
-    padding: 15px 30px;
+    padding: 15px;
+    font-family: 'Poppins';
     border-radius: 15px;
     margin: 0 0 20px 0;
     background-color: #edfff0;
@@ -646,7 +655,7 @@ input::placeholder, textarea::placeholder {
         /* checkbox*/
 .input_checkbox {
     margin-bottom: 30px;
-    margin: 0 0 20px 0;
+    margin: 0 0 0 60px;
     width: 100%;
     display: flex;
 }
@@ -672,7 +681,7 @@ input::placeholder, textarea::placeholder {
     color: #FFFFFF;
     border: 0;
     border-radius: 25px;
-    background-color: black;
+    background-color: rgb(130, 121, 121);
     box-shadow: 0 0 20px rgba(183,113,15,0.5);  
     cursor: pointer;
     width: 70%;
