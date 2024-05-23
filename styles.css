@@ -14,7 +14,6 @@ body {
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
     background-color: #3f3c3c; 
     color: #fff;
-    /* font-weight: 800;  */
     margin: 0.8%;
     padding: 0;
 }
@@ -402,6 +401,8 @@ footer {
 
 
 
+
+
 /* SANTE FE */
 
 #sF {
@@ -489,10 +490,9 @@ footer {
 
 #uS {
     background-image: url(img/bNosotros.png);
-    background-size:cover;
-    background-position: center;
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-position: top; 
     position: relative;
     height: 600px;
     border-radius: 15px;
@@ -500,113 +500,80 @@ footer {
 }
 
 /* .uSfondo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 1200px;
-    background-color: #2e2e2e;
-    padding: 50px; 
-    box-sizing: border-box; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
 }
 
-.cont1 {
+.cont1, .cont2 {
     display: flex;
-    justify-content: space-between; 
-    width:80%;
-    height: 90%;
-    margin: 50px 0 50px 0;
-    gap: 10px; 
+    justify-items: center;
+    align-items: center;
 }
 
 .card3 {
+    width: 100%; 
+    max-width: 500px;
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%;
+    overflow: hidden; 
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 45%; 
-    height: 80%; 
-    border-radius: 15px;
+    background-position: center;
+    background-image: url(./img/Rocio.png);
 }
 
-.card4 {
-    width: 50%;
-    height: 50%;
+.cont2 {
+    max-width: 400px;
+    padding: 20px;
 }
 
 .text3 {
-    font-size: 120%;
-    align-items: center;
+    font-size: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: justify;
+    padding: 20px; 
 } */
 
-/* .row1 {
-    display: flex;
+
+/* @media (max-width: 768px) {
+    .header-bar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding: 10px;
+        height: auto;
+    }
+
+    .navbar {
+        text-align: center;
+        padding-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
+
+    .logo {
+        padding: 10px 0;
+    }
+
+    .uSfondo {
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+    }
+
+    .card3 {
+        max-width: 300px; 
+    }
+
+    .cont2 {
+        max-width: 100%; 
+        padding: 20px; 
+    }
 } */
-
-.row1::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-    
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    }
-    
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-    }
-    
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-
-    .p1 {
-        font-size: 19px;
-    }
-    form {
-        width:100%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
-    .p1 {
-        font-size: 21px;
-        display: block
-    };
-
-}
-
-.img_ella {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-}
 
 #contacto {
     background-image: url(img/lamparas.png);
@@ -619,6 +586,11 @@ footer {
     border-radius: 15px;
     margin-bottom: 0.7%;
 }
+
+
+
+
+/* Codigo de Juan */
 
 form {
     width: 25%;
@@ -652,7 +624,7 @@ input::placeholder, textarea::placeholder {
     color: #b5cab6;
 }
 
-        /* checkbox*/
+       
 .input_checkbox {
     margin-bottom: 30px;
     margin: 0 0 0 60px;
@@ -664,7 +636,7 @@ input::placeholder, textarea::placeholder {
     width: 30%;
 }
 
-        /* Link términos y condiciones */
+        
 .input_checkbox a{
     margin-bottom: 30px;
     justify-content: space-between;
@@ -675,7 +647,7 @@ input::placeholder, textarea::placeholder {
     text-align: center;    
 }
 
-        /* Botón enviar consulta */
+      
 .btn{
     font-size: 16px;
     color: #FFFFFF;
@@ -687,12 +659,12 @@ input::placeholder, textarea::placeholder {
     width: 70%;
 }
 
-        /* Hover de boton enviar */
+       
 .btn:hover{
     background-color: rgba(235, 80, 16, 0.42)
 }
 
-        /* ventana de javascrips para campos de form no completado */
+       
 .warnings {
     width: 200px;
     text-align: center;
