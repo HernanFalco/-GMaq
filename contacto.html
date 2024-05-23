@@ -38,48 +38,64 @@
     </section>
 </header>
 
-    <section id="fondoarq"></section>
-    <div class="separador">
-        <h2>ARQUITECTURA & DISEÑO</h2>
-    </div>
 
-        <div class="slider-frame">
-            <div class="slider">
-                <ul>
-                    <li><img src="img/a1.png" alt="Diapositiva 1"></li>
-                    <li><img src="img/a2.png" alt="Diapositiva 2"></li>
-                    <li><img src="img/a3.png" alt="Diapositiva 3"></li>
-                    <li><img src="img/a4.png" alt="Diapositiva 4"></li>
-                    <li><img src="img/a5.png" alt="Diapositiva 5"></li>
-                </ul>
-            </div>   
+    <form class= "form" id="form" method="post" action="" name="form"> 
+        <h2>Contacto</h2>
+
+        <div class="input">
+            <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre" >
+            </div>
+
+            <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Número de telefono">
+            </div>
+
+            <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" >
+            </div> 
+        
+            <div>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Escribe aqui tu consulta" ></textarea>
+            </div>
         </div>
 
-        <div class="proyecto">
-            <h2>PROYECTOS</h2>
-            <p>CREANDO ESPACIOS UNICOS</p>
+        <div class="input_checkbox">
+            <input type="checkbox" id="acepto_condiciones" name="acepto_condiciones" >
+            <label for="acepto_condiciones"><a href="#">Acepto términos y condiciones</a></label>
         </div>
 
-    <div class="cont"> 
-        <div class="row">
-            <div class="card" style="background-color: #ffffff;">
-                <div class="text">
-                    <a href= "santaFe.html"><h3>SANTA FE</h3></a>
-                    <p>Cocina / Coffee Station</p>
-                </div>   
-            </div>  
-            <div class="card" style="background-image: url(./img/santafe.png)"> </div>
-        </div>
-        <div class="row">
-            <div class="card" style="background-image: url(./img/osaka.png)"> </div>
-            <div class="card" style="background-color: #ffffff;">
-                <div class="text">
-                    <a href="osaka.html"><h3>OSAKA</h3></a>
-                    <p>Cocina / Kitchen</p>
-                </div>   
-            </div>    
-        </div>      
-    </div>
+            <input type="submit" onclick ='return enviarFormulario()' value="Enviar consulta" class="btn">
+    </form>  
+
+    <div id="error"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <footer>
