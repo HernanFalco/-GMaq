@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header>
+<!-- <header>
     <section class="header-bar">
         <div class="logo">
             <a href="index.html"><img src="img/GMLogo2.png" alt="Logo"></a>
@@ -36,7 +36,51 @@
             <a href="nosotros.html">NOSOTROS</a>
         </nav>
     </section>
-</header>
+</header> -->
+
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="img/GMLogo2.png" alt="logo"></a>
+    </div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="" id= "">Proyectos</a>
+                <ul class="menu-vertical" id="menuVertical">
+                    <li><a href="#" >Santafe</a></li>
+                    <li><a href="#">Osaka</a></li>
+                </ul>    
+            </li>            
+
+            <li>
+                <a href="">obras</a>
+                <ul class="menu-vertical" id="menuVertical">
+                    <li><a href="#">Lacarra</a></li>
+                    <li><a href="#">Crisologo Larralde</a></li>
+                    <li><a href="#">Billinghurst</a></li>
+                    <li><a href="#">Altolaguirre</a></li>
+                </ul>    
+            </li>
+
+            <li>
+                <a href="">contacto</a>
+            </li>
+            <li>
+                <a href="">nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+</header>    
 
     <section id="fondoarq"></section>
     <div class="separador">
@@ -70,6 +114,28 @@
             </div>  
             <div class="card" style="background-image: url(./img/santafe.png)"> </div>
         </div>
+
+    <div id="row">
+        <div id="card" style="background-image: url(./img/santafe.png)"> </div>
+        <div id="card" style="background-color: #ffffff;">
+            <div id="text">
+                <a href= "santaFe.html"><h3>SANTA FE</h3></a>
+                <p>Cocina / Coffee Station</p>
+            </div>   
+        </div>      
+    </div>
+
+    <div id="row">
+        <div id="card" style="background-image: url(./img/osaka.png)"> </div>
+        <div id="card" style="background-color: #ffffff;">
+            <div id="text">
+                <a href="osaka.html"><h3>OSAKA</h3></a>
+                <p>Cocina / Kitchen</p>
+            </div>   
+        </div>    
+    </div>      
+
+
         <div class="row">
             <div class="card" style="background-image: url(./img/osaka.png)"> </div>
             <div class="card" style="background-color: #ffffff;">
