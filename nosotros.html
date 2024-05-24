@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header>
+<!-- <header>
     <section class="header-bar">
         <div class="logo">
             <a href="index.html"><img src="img/GMLogo2.png" alt="Logo"></a>
@@ -36,7 +36,51 @@
             <a href="nosotros.html">NOSOTROS</a>
         </nav>
     </section>
-</header>
+</header> -->
+
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="img/GMLogo2.png" alt="logo"></a>
+    </div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="" id= "">Proyectos</a>
+                <ul class="menu-vertical" id="menuVertical">
+                    <li><a href="#" >Santafe</a></li>
+                    <li><a href="#">Osaka</a></li>
+                </ul>    
+            </li>            
+
+            <li>
+                <a href="">obras</a>
+                <ul class="menu-vertical" id="menuVertical">
+                    <li><a href="#">Lacarra</a></li>
+                    <li><a href="#">Crisologo Larralde</a></li>
+                    <li><a href="#">Billinghurst</a></li>
+                    <li><a href="#">Altolaguirre</a></li>
+                </ul>    
+            </li>
+
+            <li>
+                <a href="contacto.html">contacto</a>
+            </li>
+            <li>
+                <a href="nosotros.html">nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+</header>    
 
     <section id="uS">
     <div class="text-box">
@@ -48,7 +92,7 @@
     <div class="uSfondo" style="background-color: rgba(255, 255, 255, 0);">
         <div class="cont1">
             <div class="card3"></div>
-
+        </div>    
         <div class="cont2">
             <div class="text3">
                 <p>Soy <strong>Rocío García Maquieira,</strong> arquitecta apasionada y creadora del estudio GMaq. Con una trayectoria que fusiona la experiencia en el urbanismo con mi visión del diseño y la arquitectura, cada día me sumerjo en el desafío de transformar espacios con alma y funcionalidad.</p>
@@ -116,34 +160,34 @@
 
 
 
-    <footer>
-        <section class="container">
-            <div class="link">
-                <ul>
-                    <li>
-                        <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
-                    </li>
-                    <li> 
-                        <a href="https://www.instagram.com/gmaq.arq/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/rocio-pilar-garcia-maquieira-6b5850118/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-                    </li>
-                    <li>
-                        <a href=""> <i class="fa-solid fa-envelope"></i> </a>
-                    </li>
-                </ul>
-             </div>
-            
-            <div class="derechos">
-                <p>&#169 2019-2024 | <b>GMAQ.</b> | Todos los derechos reservados.</p>
+<footer>
+    <section class="container">
+        <div class="link">
+            <ul>
+                <li>
+                    <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
+                </li>
+                <li> 
+                    <a href="https://www.instagram.com/gmaq.arq/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rocio-pilar-garcia-maquieira-6b5850118/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                </li>
+                <li>
+                    <a href=""> <i class="fa-solid fa-envelope"></i> </a>
+                </li>
+            </ul>
             </div>
-        </section>
-    </footer>
-    
-        <button id="back_to_top">&#8593;</button>
-    
-        <script src="script.js"></script>
-    
-    </body>
-    </html>
+        
+        <div class="derechos">
+            <p>&#169 2019-2024 | <b>GMAQ.</b> | Todos los derechos reservados.</p>
+        </div>
+    </section>
+</footer>
+
+    <button id="back_to_top">&#8593;</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
