@@ -575,104 +575,78 @@ footer {
     }
 } */
 
+/* Codigo de Juan */
 #contacto {
     background-image: url(img/lamparas.png);
-    background-size:cover;
-    background-position: center;
+    background-size:cover;  
     background-repeat: no-repeat;
     background-position: top; 
     position: relative;
-    height: 1500px;
+    height: 1000px;
     border-radius: 15px;
     margin-bottom: 0.7%;
 }
 
-
-
-
-/* Codigo de Juan */
-
 form {
-    width: 25%;
+    width: 40%;
     height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    padding-top: 300px;
+    align-items: center;
+    padding-top: 150px;
 }
 
-.input{
-    flex-direction: column;
-    text-align: left;
-    font-weight: 600;
+.error{
+    margin: 3px 0 12px 0;
+    color: red;
+    font-weight: bold;
 }
 
-input,textarea {
-    padding: 15px;
-    font-family: 'Poppins';
-    border-radius: 15px;
-    margin: 0 0 20px 0;
-    background-color: #edfff0;
+.error_enviado{
+    margin: 3px 0 12px 0;
+}
+
+input, select {
+    border-radius: 10px;
+    margin: 0 0 10px 0;
     border: 2px solid #f0faf1;
     color: #283629;
-    outline: none ;
     width: 100%;
+    height: 35px;
 }
 
-input::placeholder, textarea::placeholder {
-    color: #b5cab6;
-}
-
-       
-.input_checkbox {
-    margin-bottom: 30px;
-    margin: 0 0 0 60px;
+textarea{
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    border: 2px solid #f0faf1;
+    color: #283629;
     width: 100%;
-    display: flex;
+    height: 100px;
 }
-
-.input_checkbox input {
-    width: 30%;
-}
-
-        
-.input_checkbox a{
-    margin-bottom: 30px;
-    justify-content: space-between;
-    color: rgba(165, 82, 46, 0.98);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;    
-}
-
       
 .btn{
     font-size: 16px;
     color: #FFFFFF;
     border: 0;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: rgb(130, 121, 121);
     box-shadow: 0 0 20px rgba(183,113,15,0.5);  
     cursor: pointer;
-    width: 70%;
+    width: 60%;
+    height: 35px;
 }
-
-       
+     
 .btn:hover{
     background-color: rgba(235, 80, 16, 0.42)
 }
+     
+@media only screen and (max-width:600px) {
 
-       
-.warnings {
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: burlywood;
-    padding-top: 20px;
+    form {
+        width:90%;
+    }
 }
-
 
 
 

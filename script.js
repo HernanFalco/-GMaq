@@ -12,36 +12,73 @@ document.getElementById('back_to_top').addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-const nombre = document.getElementById("name");
-const mensaje = document.getElementById("message");
-const email = document.getElementById("email");
-const acepto_condiciones = document.getElementById("acepto_condiciones");
-const error = document.getElementById("error");
+const formRegister=document.getElementById("form")
+const inputNombre=document.getElementById("name");
+const inputTelefono=document.getElementById("telefono");
+const inputEmail=document.getElementById("email");
+const inputTipoConsulta=document.getElementById("tipo_consulta");
+const inputMensaje = document.getElementById("message");
 
-function enviarFormulario(){
-    console.log('Enviando consulta...');
+const errorNombre=document.getElementById("error_name");
+const errorEmail=document.getElementById("error_email");
+const errorSelect=document.getElementById("error_select");
+const errorMessage=document.getElementById("error_message");
+const errorCaptcha=document.getElementById("error_captcha");
+const errorEnviado=document.getElementById("error_enviado");
+
+
+formRegister.addEventListener("submit",e=>{
+    e.preventDefault();
+    let valor=false;
+    errorNombre.innerHTML="";
+    errorEmail.innerHTML="";
+    errorSelect.innerHTML="";
+    errorMessage.innerHTML="";
+    errorCaptcha.innerHTML="";
+    errorEnviado.innerHTML="";
+    let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const captchaResponse = grecaptcha.getResponse();
     
-    var mensajesError = [];
-
-    if(nombre.value === null || nombre.value === ""){
-        mensajesError.push("Ingrese su nombre");
+    if(inputNombre.value.length<3){
+        errorNombre.innerHTML=`EY! NO PUSISTE TU NOMBRE`
+        valor=true;
+    }
+    if(!regexEmail.test(inputEmail.value)){
+        errorEmail.innerHTML=`MMHH, EL EMAIL NO PARECE VÁLIDO... INTENTA DE NUEVO!`
+        valor=true;
+    }
+    if(inputTipoConsulta.value=="default"){
+        errorSelect.innerHTML=`ELIJE EL TIPO DE CONSULTA`
+        valor=true;
+    }
+    if(inputMensaje.value.length<3){
+        errorMessage.innerHTML=`CONTANOS ALGO, ASI SABREMOS POR DONDE EMPEZAR`
+        valor=true;
      }
 
-     if(mensaje.value === null || mensaje.value === ""){
-        mensajesError.push("Ingrese un mensaje");
-     }
+    if(!captchaResponse.length > 0){
+        errorCaptcha.innerHTML=`EY! SOS UNA MAQUINA?, VALIDA EL CAPTCHA!`
+        valor=true;
+    }
 
-     if(email.value === null || email.value === ""){
-        mensajesError.push("Ingrese su email");
-     }
+    if(valor){
 
-      if(acepto_condiciones.checked){
-      }else{
-            mensajesError.push('Acepte términos y condiciones');
-      }
+    }else{
+        errorEnviado.innerHTML="Consulta enviada. Gracias! :)";
+        formRegister.reset();
+    }
+    })
 
-    error.innerHTML = mensajesError.join (", ");
+   
 
-    return false;
-}
+
+
+
+
+
+
+
+
+
+
 

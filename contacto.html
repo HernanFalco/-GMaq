@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="img/GM.ico" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -45,62 +46,52 @@
         <h2>Contacto</h2>
 
         <div class="input">
+
             <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre Completo" >
+            <input id="name" name="name" type="text" >
+            <p id="error_name" class="error"></p>
             </div>
 
             <div>
             <label for="telefono">Teléfono</label>
-            <input type="tel" name="phone" id="phone" placeholder="Celular">
+            <input type="tel" name="phone" id="phone" placeholder="">
             </div>
 
             <div>
-            <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" placeholder="E-Mail" >
+            <label for="text">E-Mail</label>
+            <input id="email" name="email" type="text" />
+            <p id="error_email" class="error"></p>
             </div> 
+
+            <div>
+                <select name="tipo_consulta" id="tipo_consulta">
+                    <option value="default">¿Que tipo de consulta tenes?</option>
+                    <option value="op1">Cotización de proyecto</option>
+                    <option value="op2">Reclamo</option>
+                    <option value="op3">Otros</option>
+                </select>
+            <p id="error_select" class="error"></p>
+            </div>
         
             <div>
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Contanos de tu proyecto" ></textarea>
+            <label for="message">Escribi aqui tu consulta</label>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            <p id="error_message" class="error"></p>
             </div>
+
         </div>
 
-        <div class="input_checkbox">
-            <input type="checkbox" id="acepto_condiciones" name="acepto_condiciones" >
-            <label for="acepto_condiciones"><a href="#">Acepto términos y condiciones</a></label>
-        </div>
+        <div class="g-recaptcha" data-sitekey="6LeFOecpAAAAAGme9Go6gQOCZ0fK2qHvX19Bmm6k"></div>
+        <p id="error_captcha" class="error"></p>
 
-            <input type="submit" onclick ='return enviarFormulario()' value="Enviar" class="btn">
+        <button type="submit" class="btn">Enviar</button>
+        
+        <p id="error_enviado" class="error_enviado"></p>
+
     </form>  
 
-    <div id="error"></div>
-
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <footer>
     <section class="container">
