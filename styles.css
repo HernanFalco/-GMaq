@@ -1045,6 +1045,11 @@ textarea{
         height: 80vh;
     }
 
+    .cont #row #card{
+        height: 250px;
+        
+    }
+
 }
 
 

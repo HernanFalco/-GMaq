@@ -10,33 +10,48 @@
 </head>
 <body>
 
-<header>
-    <section class="header-bar">
+    <header>
         <div class="logo">
-            <a href="index.html"><img src="img/GMLogo2.png" alt="Logo"></a>
+            <a href="index.html"><img src="img/GMLogo2.png" alt="logo"></a>
         </div>
-        <nav class="navbar">
-            <a href="index.html"><b>HOME</b></a>
-            <div class="dropdown">
-                <button class="dropbtn">PROYECTOS</button>
-                    <div class="dropdown-content">
-                        <a href="santaFe.html">SANTA FE</a>
-                        <a href="osaka.html">OSAKA</a>
-                    </div>
-            </div>
-            <div class="dropdown"><button class="dropbtn">OBRAS</button>
-                <div class="dropdown-content">
-                    <a href="#">BILLINGHURST</a>
-                    <a href="#">C. LARRALDE</a>
-                    <a href="#">ALTOAGUIRRE</a>
-                    <a href="#">LACARRA</a>
-                </div>
-            </div>
-            <a href="contacto.html">CONTACTO</a>
-            <a href="nosotros.html">NOSOTROS</a>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul class="menu-horizontal">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Proyectos</a>
+                    <ul class="menu-vertical">
+                        <li><a href="santaFe.html" >Santafe</a></li>
+                        <li><a href="osaka.html">Osaka</a></li>
+                    </ul>    
+                </li>            
+    
+                <li>
+                    <a href="#">obras</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">Lacarra</a></li>
+                        <li><a href="#">Crisologo Larralde</a></li>
+                        <li><a href="#">Billinghurst</a></li>
+                        <li><a href="#">Altolaguirre</a></li>
+                    </ul>    
+                </li>
+    
+                <li>
+                    <a href="contacto.html">contacto</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">nosotros</a>
+                </li>
+            </ul>
         </nav>
-    </section>
-</header>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>    
 
     <section id="sF">
         <div class="video-container">
