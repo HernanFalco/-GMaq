@@ -748,12 +748,14 @@ form {
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
+    font-size: 14px;
 }
 
 .error{
     margin: 3px 0 12px 0;
-    color: red;
-    font-weight: bold;
+    color: rgb(226, 217, 200);
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .error_enviado{
@@ -767,7 +769,9 @@ input, select {
     color: #283629;
     width: 100%;
     height: 35px;
-    font-family: 'poppins';
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 textarea{
@@ -781,18 +785,19 @@ textarea{
       
 .btn{
     font-size: 16px;
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
     color: #FFFFFF;
     border: 0;
     border-radius: 10px;
     background-color: rgb(130, 121, 121);
     box-shadow: 0 0 20px rgba(183,113,15,0.5);  
     cursor: pointer;
-    width: 60%;
+    width: 20%;
     height: 35px;
 }
      
 .btn:hover{
-    background-color: rgba(235, 80, 16, 0.42)
+    background-color: rgba(215, 73, 12, 0.866)
 }
      
 /* RESPONSIVE */
@@ -842,13 +847,14 @@ textarea{
 
     header nav ul {
         display: block;
+        margin-left: -50px;
     }
     
     header nav .menu-vertical{
-	    background-color: #979782ec;
+	    background-color: #97978200;
         position: relative;
         width: 92%;
-        left: 0;
+        left: 50px;
     }
 
     header nav .menu-vertical li a{
