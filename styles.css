@@ -687,10 +687,10 @@ footer {
     background-image: url(./img/Rocio.png);
 }
 
-.cont2 {
-    /* max-width: 400px; */
-    /* padding: 20px; */
-}
+/* .cont2 {
+    max-width: 400px;
+    padding: 20px;
+} */
 
 .text3 {
     font-size: 110%;
@@ -824,6 +824,7 @@ textarea{
 
     .hamburger {
         display: block;
+        margin-right: 10px;
     }
 
     header nav {
