@@ -200,23 +200,24 @@ header nav ul li a:hover {
     padding-top: 20px;
     border-radius: 15px;
     z-index: 1;
-	background-color: #979782ad;
+	background-color: #97978200;
 }
 
 .menu-vertical li{
-    text-align: center;
+    text-align: left;
     margin-right: 200px;
-   
 }
 
 .menu-vertical li a {
     color: #f67e07;
     font-weight: 700;
-    display: block;
-    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
     text-decoration: none;
     padding: 15px  10px;
-
+    margin-left: -27px;
+    white-space: nowrap
 }
 
 .menu-vertical a:hover {
@@ -230,14 +231,6 @@ header nav ul li a:hover {
     cursor: pointer;
     display: none;
 }
-
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: #fff;
-}
-
 
 .separador {
     height: 230px;
