@@ -431,7 +431,7 @@ header nav ul li a:hover {
     display: none;
     gap: 0.7%;
     flex: 1;
-    margin-bottom: 0.7%;
+    /* margin-bottom: 0.7%; */
 }
 
 #card {
@@ -439,6 +439,7 @@ header nav ul li a:hover {
     border-radius: 15px;
     height: 600px;
     min-height: 200px;
+    margin-bottom: 3px;
     position: relative;
     overflow: hidden;
     background-size: cover;
@@ -958,7 +959,7 @@ textarea{
 
     .cont #row #card{
         height: 400px;
-        /* margin-top: 5px; */
+        margin-top: 0.7px;
     }
 
     .cont #row #card h3{
@@ -1003,7 +1004,7 @@ textarea{
     }
 
     #fondoarq{
-        height: 85vh;
+        height: 100vh;
     }
 
     .cont #row #card{
@@ -1040,8 +1041,16 @@ textarea{
 }
 
 @media only screen and (max-width: 450px){
+
+    .separador {
+        height: 100px;
+    }
     .separador h2{
         font-size: 1.5em;
+    }
+
+    .proyecto{
+        height: 100px;
     }
 
     .proyecto h2{
@@ -1061,12 +1070,11 @@ textarea{
     }
 
     #fondoarq{
-        height: 80vh;
+        height: 100vh;
     }
 
     .cont #row #card{
         height: 250px;
-        
     }
 
     .text-box h2 {
@@ -1074,6 +1082,27 @@ textarea{
         margin-top: 70px;
     } 
 
+    #back_to_top {
+        display: none;
+        position: fixed;
+        bottom: 150px;
+        right: 30px;
+        width: 45px;
+        height: 45px;
+        font-size: 10px;
+    }
+
+    .link ul li a i {
+        font-size: 16px;
+        color: #ede6e6;
+    }
+
+    .derechos {
+        padding-top: 100px;
+        font-size: 12px;
+    }
+    
+    
 }
 
 
