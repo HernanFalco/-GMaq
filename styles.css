@@ -793,6 +793,7 @@ textarea{
     font-family: 'Hurme Geometric Sans No.2', sans-serif;
     font-weight: 700;
     width: 100%;
+    height: 200px;
     resize: none;
 }
       
