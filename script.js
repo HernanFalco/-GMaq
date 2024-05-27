@@ -16,12 +16,12 @@ const formRegister=document.getElementById("form")
 const inputNombre=document.getElementById("name");
 const inputTelefono=document.getElementById("telefono");
 const inputEmail=document.getElementById("email");
-const inputTipoConsulta=document.getElementById("tipo_consulta");
+// const inputTipoConsulta=document.getElementById("tipo_consulta");
 const inputMensaje = document.getElementById("message");
 
 const errorNombre=document.getElementById("error_name");
 const errorEmail=document.getElementById("error_email");
-const errorSelect=document.getElementById("error_select");
+// const errorSelect=document.getElementById("error_select");
 const errorMessage=document.getElementById("error_message");
 const errorCaptcha=document.getElementById("error_captcha");
 const errorEnviado=document.getElementById("error_enviado");
@@ -32,7 +32,7 @@ formRegister.addEventListener("submit",e=>{
     let valor=false;
     errorNombre.innerHTML="";
     errorEmail.innerHTML="";
-    errorSelect.innerHTML="";
+    // errorSelect.innerHTML="";
     errorMessage.innerHTML="";
     errorCaptcha.innerHTML="";
     errorEnviado.innerHTML="";
@@ -47,10 +47,10 @@ formRegister.addEventListener("submit",e=>{
         errorEmail.innerHTML=`MMHH, EL EMAIL NO PARECE VÁLIDO... INTENTA DE NUEVO!`
         valor=true;
     }
-    if(inputTipoConsulta.value=="default"){
-        errorSelect.innerHTML=`ELIJE EL TIPO DE CONSULTA`
-        valor=true;
-    }
+    // if(inputTipoConsulta.value=="default"){
+    //     errorSelect.innerHTML=`ELIJE EL TIPO DE CONSULTA`
+    //     valor=true;
+    // }
     if(inputMensaje.value.length<3){
         errorMessage.innerHTML=`CONTANOS ALGO, ASI SABREMOS POR DONDE EMPEZAR`
         valor=true;
