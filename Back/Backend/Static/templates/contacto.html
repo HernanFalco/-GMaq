@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMAQ | Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="img/GM.ico" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+<!-- <header>
+    <section class="header-bar">
+        <div class="logo">
+            <a href="index.html"><img src="img/GMLogo2.png" alt="Logo"></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><b>HOME</b></a>
+            <div class="dropdown">
+                <button class="dropbtn">PROYECTOS</button>
+                    <div class="dropdown-content">
+                        <a href="santaFe.html">SANTA FE</a>
+                        <a href="osaka.html">OSAKA</a>
+                    </div>
+            </div>
+            <div class="dropdown"><button class="dropbtn">OBRAS</button>
+                <div class="dropdown-content">
+                    <a href="#">BILLINGHURST</a>
+                    <a href="#">C. LARRALDE</a>
+                    <a href="#">ALTOAGUIRRE</a>
+                    <a href="#">LACARRA</a>
+                </div>
+            </div>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+        </nav>
+    </section>
+</header> -->
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="img/GMLogo2.png" alt="logo"></a>
+    </div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Proyectos</a>
+                <ul class="menu-vertical">
+                    <li><a href="santaFe.html" >Santafe</a></li>
+                    <li><a href="osaka.html">Osaka</a></li>
+                </ul>    
+            </li>            
+
+            <li>
+                <a href="#">Obras</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Lacarra</a></li>
+                    <li><a href="#">Crisologo Larralde</a></li>
+                    <li><a href="#">Billinghurst</a></li>
+                    <li><a href="#">Altolaguirre</a></li>
+                </ul>    
+            </li>
+
+            <li>
+                <a href="contacto.html">contacto</a>
+            </li>
+            <li>
+                <a href="nosotros.html">nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <i class="fa-solid fa-bars fa-shake fa-lg" style="color: #ffffff;"></i>
+    </label>
+</header>    
+
+<section id="contacto">
+
+    <form class= "form" id="form" method="post" action="" name="form"> 
+        <h2>CONTACTO</h2>
+
+        <div class="input">
+
+            <div>
+            <label for="name">NOMBRE</label>
+            <input id="name" name="name" type="text" >
+            <p id="error_name" class="error"></p>
+            </div>
+
+            <div>
+            <label for="telefono">CELULAR</label>
+            <input type="tel" name="phone" id="phone" placeholder="">
+            </div>
+
+            <div>
+            <label for="text">E-MAIL</label>
+            <input id="email" name="email" type="text" />
+            <p id="error_email" class="error"></p>
+            </div> 
+
+            <!-- <div>
+                <select name="tipo_consulta" id="tipo_consulta">
+                    <option value="default">¿QUE TIPO DE CONSULTA TENES?</option>
+                    <option value="op1">COTIZACION DE PROYECTO</option>
+                    <option value="op2">EVALUACION PARA REFORMAS</option>
+                    <option value="op3">OTROS..</option>
+                </select>
+            <p id="error_select" class="error"></p>
+            </div> -->
+        
+            <div>
+            <label for="message">ESCRIBINOS TU CONSULTA</label>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            <p id="error_message" class="error"></p>
+            </div>
+
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LdmvekpAAAAAMUUXy3_1eaCSye46CwSG6Tah_Vs"></div>
+        <p id="error_captcha" class="error"></p>
+
+        <button type="submit" class="btn">Enviar</button>
+        
+        <p id="error_enviado" class="error_enviado"></p>
+
+    </form>  
+
+</section>
+
+<footer>
+    <section class="container">
+        <div class="link">
+            <ul>
+                <li>
+                    <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
+                </li>
+                <li> 
+                    <a href="https://www.instagram.com/gmaq.arq/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rocio-pilar-garcia-maquieira-6b5850118/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                </li>
+                <li>
+                    <a href="contacto.html"> <i class="fa-solid fa-envelope"></i> </a>
+                </li>
+            </ul>
+         </div>
+        
+        <div class="derechos">
+            <p>&#169 2019-2024 | <b>GMAQ.</b> | Todos los derechos reservados.</p>
+        </div>
+    </section>
+</footer>
+
+    <button id="back_to_top">&#8593;</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

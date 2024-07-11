@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMAQ | Reseñas</title>
+    <link rel="stylesheet" href="/Backend/Static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="/Backend/Static/img/GM.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="/Backend/Static/img/GMLogo2.png" alt="logo"></a>
+    </div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+        <ul class="menu-horizontal">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Proyectos</a>
+                <ul class="menu-vertical">
+                    <li><a href="santaFe.html" >Santafe</a></li>
+                    <li><a href="osaka.html">Osaka</a></li>
+                </ul>    
+            </li>            
+
+            <li>
+                <a href="#">Obras</a>
+                <ul class="menu-vertical">
+                    <li><a href="#">Lacarra</a></li>
+                    <li><a href="#">Crisologo Larralde</a></li>
+                    <li><a href="#">Billinghurst</a></li>
+                    <li><a href="#">Altolaguirre</a></li>
+                </ul>    
+            </li>
+
+            <li>
+                <a href="contacto.html">contacto</a>
+            </li>
+            <li>
+                <a href="nosotros.html">nosotros</a>
+            </li>
+        </ul>
+    </nav>
+    <label for="nav_check" class="hamburger">
+        <i class="fa-solid fa-bars fa-shake fa-lg" style="color: #ffffff;"></i>
+    </label>
+</header>    
+
+<!-- Indicar contenido principal de la pagina -->
+<main> 
+    <section id="form" class="container ">
+        <h2 class="search-title"><Ri:a>Reseñas</Ri:a></h2>
+        <p class="description" >En esta sección podes dejar tu reseña sobre nuestros servicios.</p>
+        <form action="#"  id="form-resena">
+            <div class="d-flex">
+                <div class="form-control d-flex-column">
+                    <label for="nombre">Tu nombre</label>
+                    <input type="text" class="input-search" name="nombre" id="nombre">
+                </div>
+                <div class="form-control d-flex-column">
+                    <label for="texto-resena">Escribe tu reseña</label>
+                    <input type="text" class="input-search" name="texto-resena" id="texto-resena">
+                </div>
+                <input type="hidden"  name="id" id="id-resena">
+                <button class="btn-cac" type="button" id="btn-save-resena">Agregar reseña</button>
+            </div>
+        </form> 
+    </section>
+       
+    <section id="list" class="container">
+        <h3 class="subtitle">Listado de reseñas</h3>
+        <table id="list-table-resenas" class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Reseña</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-table-resenas">    
+            </tbody>
+        </table>
+    </section>  
+</main>
+
+<footer>
+    <section class="container">
+        <div class="link">
+            <ul>
+                <li>
+                    <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
+                </li>
+                <li> 
+                    <a href="https://www.instagram.com/gmaq.arq/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rocio-pilar-garcia-maquieira-6b5850118/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                </li>
+                <li>
+                    <a href="contacto.html"> <i class="fa-solid fa-envelope"></i> </a>
+                </li>
+            </ul>
+         </div>
+        
+        <div class="derechos">
+            <p>&#169 2019-2024 | <b>GMAQ.</b> | Todos los derechos reservados.</p>
+        </div>
+    </section>
+</footer>
+
+    <button id="back_to_top">&#8593;</button>
+
+    <script src="/Backend/Static/js/script.js"></script>
+    <script src="/Backend/Static/js/Ejemplos/crud-resenas-fetch.js"></script>
+
+</body>
+</html>
