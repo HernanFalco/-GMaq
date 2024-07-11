@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+            /* HEADER */
+header {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+
+            /* BODY PAGINA NOSOTRAS */
+ body   {
+    font-family: 'Hurme Geometric Sans No.2', sans-serif;
+    margin: 0.8%;
+    color: #fff; 
+    padding: 0;    
+    background-image:url("/img/lamparas.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'Hurme Geometric Sans No.2';
+    src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
+        url(fonts/HurmeGeometricSans2-Thin.ttf) format('woff2'),
+        url(fonts/HurmeGeometricSans2-Thin.woff) format('woff'),
+        url(fonts/HurmeGeometricSans2-Thin.woff2) format('truetype');
+    font-style: normal;
+}
+
+.header-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 15px;
+    left: 2.5%;
+    width: 95%;
+    height: 75px;
+    background-color: #979782dc; 
+    margin: 0;
+    border-radius: 15px;
+    top: 3.2%;
+    z-index: 1;
+}
+
+.logo {
+    max-height: 65px; 
+    padding: 20px;
+}
+
+.logo img {
+    height: 65px;
+}
+
+/* 
+        Barra de navegacion - Header */
+
+.navbar {
+    font-size: 14px; 
+    background-color: transparent;
+    text-align: right; 
+    padding-right: 20px;
+    margin-left: auto;
+    z-index: 1;
+}
+        
+.navbar a {
+    display: inline-block;
+    color: #ffffff; 
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    border-radius: 15px; 
+}
+        
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.dropbtn:hover { 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    background-color: #97978200;
+    min-width: 160px;
+    padding-top: 30px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f67e07;
+    font-weight: 700;
+    margin-right: 60px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ede6e6;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+            /* FORMULARIO */
+
+form {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: left; */
+    align-items: center;
+    padding-top: 150px;
+}
+
+.input{
+    /* display: flex; */
+    flex-direction: column;
+    text-align: left;
+}
+
+input,textarea {
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 0 0 20px 0;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none ;
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+
+        /* checkbox*/
+.input_checkbox {
+    margin-bottom: 30px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    display: flex;
+}
+
+.input_checkbox input {
+    width: 30%;
+}
+
+        /* Link términos y condiciones */
+.input_checkbox a{
+    margin-bottom: 30px;
+    justify-content: space-between;
+    color: rgba(165, 82, 46, 0.98);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;    
+}
+
+        /* Botón enviar consulta */
+.btn{
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(183,113,15,0.5);  
+    cursor: pointer;
+    width: 70%;
+}
+
+        /* Hover de boton enviar */
+.btn:hover{
+    background-color: rgba(235, 80, 16, 0.42)
+}
+
+        /* ventana de javascrips para campos de form no completado */
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: burlywood;
+    padding-top: 20px;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  
+    .navbar{
+        display: flex;
+        float: right;
+    }
+    form {
+        width:100%;
+    }
+}
+
+
+            /* FOOTER */
+
+footer {
+    background-color: #979782;
+    border-radius: 15px;
+}
+
+.container {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.link {
+    display: inline-block;
+    padding-top: 100px;
+}
+
+.link ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.link ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.link ul li a {
+    color: #ede6e6;
+    text-decoration: none;
+    font-size: 12px; 
+    align-items: center;
+    display: inline-flex;
+    justify-content: center; 
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%; 
+    background-color: #dbcdcd72;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.link ul li a i {
+    font-size: 20px;
+    color: #ede6e6;
+}
+
+.link ul li a:hover {
+    background-color: #ede6e6; 
+    color: #534f4f; 
+}
+
+.link ul li a:hover i {
+    color: #534f4f; 
+}
+
+.derechos {
+    padding-top: 100px;
+    font-size: 14px;
+}
+
+.derechos p{
+    font-weight: normal;
+}
+
+.derechos {
+    font-weight: bold;
+}
