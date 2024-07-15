@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/Backend/Static/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="/Backend/Static/img/GM.ico" type="image/x-icon">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
 </head>
 <body>
 
@@ -54,10 +55,15 @@
 
 <!-- Indicar contenido principal de la pagina -->
 <main> 
-    <section id="form" class="container ">
-        <h2 class="search-title"><Ri:a>Reseñas</Ri:a></h2>
+
+    <section id="form" class="container-resena">
+
+        <h2 class="search-title">Reseñas</h2>
+
         <p class="description" >En esta sección podes dejar tu reseña sobre nuestros servicios.</p>
+        
         <form action="#"  id="form-resena">
+
             <div class="d-flex">
                 <div class="form-control d-flex-column">
                     <label for="nombre">Tu nombre</label>
@@ -70,9 +76,12 @@
                 <input type="hidden"  name="id" id="id-resena">
                 <button class="btn-cac" type="button" id="btn-save-resena">Agregar reseña</button>
             </div>
+
         </form> 
+
     </section>
-       
+
+    
     <section id="list" class="container">
         <h3 class="subtitle">Listado de reseñas</h3>
         <table id="list-table-resenas" class="table">
@@ -85,36 +94,15 @@
             <tbody id="tbody-table-resenas">    
             </tbody>
         </table>
-    </section>  
+    </section> 
+    
 </main>
 
-<footer>
-    <section class="container">
-        <div class="link">
-            <ul>
-                <li>
-                    <a href=""> <i class="fa-brands fa-whatsapp"></i> </a>
-                </li>
-                <li> 
-                    <a href="https://www.instagram.com/gmaq.arq/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/rocio-pilar-garcia-maquieira-6b5850118/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
-                </li>
-                <li>
-                    <a href="contacto.html"> <i class="fa-solid fa-envelope"></i> </a>
-                </li>
-            </ul>
-         </div>
-        
-        <div class="derechos">
-            <p>&#169 2019-2024 | <b>GMAQ.</b> | Todos los derechos reservados.</p>
-        </div>
-    </section>
-</footer>
+
 
     <button id="back_to_top">&#8593;</button>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="/Backend/Static/js/script.js"></script>
     <script src="/Backend/Static/js/Ejemplos/crud-resenas-fetch.js"></script>
 

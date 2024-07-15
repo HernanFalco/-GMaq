@@ -1,4 +1,5 @@
-const BASEURL = 'http://127.0.0.1:5500'; //direccion del servidor
+const BASEURL = 'http://127.0.0.1:5000/'; //direccion del servidor
+// import Swal from 'sweetalert2';
 
 //Async porque puede que quede en un tiempo de espera
 async function fetchData(url, method, data = null) {
@@ -10,16 +11,18 @@ async function fetchData(url, method, data = null) {
         body: data ? JSON.stringify(data) : null,
     };
     try {
-    const response = await fetch (url,options);
-    if(!response.ok){
-        throw new Error (`Error: ${response.statusText}`);
+        const response = await fetch(url, options);
+        if(!response.ok){
+            throw new Error (`Error: ${response.statusText}`);
     }
     return await response.json();
     } catch(error){
         console.error('Fetch error:', error);
-        alert('Un error ocurriò buscando los datos. Por favor intente de nuevo')
+        alert('Un error ocurrió buscando los datos. Por favor intente de nuevo.');
     }
 }
+
+  
 
 async function saveResena(){
     const idResena = document.querySelector('#id-resena').value;
@@ -27,7 +30,7 @@ async function saveResena(){
     const textoResena = document.querySelector('#texto-resena').value;
 
 //Validacion de la reseña
-    if(!nombre || textoResena){
+    if(!nombre || !textoResena){
         Swal.fire({
             title: 'Error!',
             text: 'Por favor complete todos los campos.',
@@ -66,7 +69,7 @@ async function showResenas(){
     let resenas = await fetchData (BASEURL+ '/api/resenas/', 'GET');
     const tableResenas = document.querySelector('#list-table-resenas tbody');
     tableResenas.innerHTML='';
-    resenas.forEach((resena,index)=>{
+    resenas.forEach((resena) => {
         let tr = `<tr>
                         <td>${resena.nombre}</td>
                         <td>${resena.texto_resena}</td>
@@ -75,9 +78,9 @@ async function showResenas(){
                             <button class="btn-resena" onclick='deleteResena(${resena.id_resena})'><i class="fa fa-trash"></button></i>
                         </td>
                     </tr>`;
-tableResenas.insertAdjacentHTML("beforeend", tr);
+        tableResenas.insertAdjacentHTML("beforeend", tr);
             
- });
+    });
 }
 
 function deleteResena(id){
@@ -106,7 +109,7 @@ async function updateResena(id){
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-    const   btnSaveResena = document.querySelector('#btn-save-resena');
-    btnSaveResena.addEventListener('click',saveResena)
+    const btnSaveResena = document.querySelector('#btn-save-resena');
+    btnSaveResena.addEventListener('click',saveResena);
     showResenas();
 });
