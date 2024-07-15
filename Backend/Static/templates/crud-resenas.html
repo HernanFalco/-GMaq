@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GMAQ | Reseñas</title>
+    <title>GMAQ | Arquitectura</title>
     <link rel="stylesheet" href="/Backend/Static/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="/Backend/Static/img/GM.ico" type="image/x-icon">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
 </head>
 <body>
 
-
 <header>
     <div class="logo">
-        <a href="index.html"><img src="/Backend/Static/img/GMLogo2.png" alt="logo"></a>
+        <a href="/index.html"><img src="/Backend/Static/img/GMLogo2.png" alt="logo"></a>
     </div>
     <input type="checkbox" id="nav_check" hidden>
     <nav>
         <ul class="menu-horizontal">
             <li>
-                <a href="index.html">Home</a>
+                <a href="/index.html">Home</a>
             </li>
             <li>
                 <a href="#">Proyectos</a>
                 <ul class="menu-vertical">
-                    <li><a href="santaFe.html" >Santafe</a></li>
-                    <li><a href="osaka.html">Osaka</a></li>
+                    <li><a href="/Backend/Static/templates/santaFe.html" >Santafe</a></li>
+                    <li><a href="/Backend/Static/templates/osaka.html">Osaka</a></li>
                 </ul>    
             </li>            
 
@@ -41,17 +39,21 @@
             </li>
 
             <li>
-                <a href="contacto.html">contacto</a>
+                <a href="/Backend/Static/templates/contacto.html">Contacto</a>
             </li>
             <li>
-                <a href="nosotros.html">nosotros</a>
+                <a href="/Backend/Static/templates/nosotros.html">Nosotros</a>
+            </li>
+
+            <li>
+                <a href="/Backend/Static/templates/crud-resenas.html">Reseñas</a>
             </li>
         </ul>
     </nav>
     <label for="nav_check" class="hamburger">
         <i class="fa-solid fa-bars fa-shake fa-lg" style="color: #ffffff;"></i>
     </label>
-</header>    
+</header>   
 
 <!-- Indicar contenido principal de la pagina -->
 <main> 
