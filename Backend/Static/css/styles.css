@@ -21,9 +21,9 @@ body {
 @font-face {
     font-family: 'Hurme Geometric Sans No.2';
     src: local('Hurme Geometric Sans No.2 Thin'), local('Hurme-Geometric-Sans-No.2-Thin'),
-        url(fonts/HurmeGeometricSans2-Thin.ttf) format('woff2'),
-        url(fonts/HurmeGeometricSans2-Thin.woff) format('woff'),
-        url(fonts/HurmeGeometricSans2-Thin.woff2) format('truetype');
+        url(/Backend/Static/fonts/HurmeGeometricSans2-Thin.woff2) format('woff2'),
+        url(/Backend/Static/fonts/HurmeGeometricSans2-Thin.woff) format('woff'),
+        url(/Backend/Static/fonts/HurmeGeometricSans2-Thin.ttf) format('truetype');
     font-style: normal;
 }
 
@@ -644,7 +644,7 @@ footer {
 
     /* NOSOTROS */
 #uS {
-    background-image: url(img/bNosotros.png);
+    background-image: url(/Backend/Static/img/bNosotros.png);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -678,7 +678,7 @@ footer {
     overflow: hidden; 
     background-size: cover;
     background-position: center;
-    background-image: url(./img/Rocio.png);
+    background-image: url(/Backend/Static/img/Rocio.png);
 }
 
 /* .cont2 {
@@ -1131,160 +1131,3 @@ textarea{
     
     
 }
-
-/* RESEÑAS */
-.description{
-    color: white;
-    margin: 20px 0px;
-}
-
-.d-flex{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#form .d-flex{
-    justify-content: space-around;
-}
-
-.d-flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-.form-control label{
-    color: #FFF;
-}
-
-.form-control input {
-    height: 50px;
-    width: 100%;
-    background: rgba(255,255,255,0.1);
-    border: 2px solid white;
-    outline: none;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 1rem;
-    padding: 0 20px;
-}
-.form-select {
-    display: block;
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #fff;
-    background: rgba(255,255,255,0.1);
-    border: 2px solid white; 
-    border-radius: 25px;
-    margin: 20px 0px;
-
-}
-
-.form-select option{
-    color:#2a2a2a;
-}
-
-.subtitle{
-    color: white;
-    font-size: 1.5vw;
-}
-
-#list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.table {
-    margin: 30px 0px;
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #FFF;
-    vertical-align: top;
-    border-color: #dee2e6;
-}
-
-.table th,
-.table td {
-    padding: 8px; 
-    text-align: center;
-}
-.table th{
-    border-bottom: 1px solid #ffffff;
-}
-.table td{
-    border-bottom: 1px solid #4f4f4f;
-}
-
-#list-div-resenas{
-    width: 100%;
-}
-
-.item-resena{
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0px;
-}
-
-h3{
-    align-self: center;
-}
-.btn-cac{
-    background-color: var(--primary-color);
-    padding: 10px;
-    border-radius: 10px;
-    color:#FFF;
-    cursor: pointer;
-}
-
-#form-resena{
-    width:100%;
-    position: relative;
-
-}
-
-.container-resena{
-   max-width: 1200px;
-   margin: 120px auto;
-}
-
-.search-title{
-    color:white;
-    font-size: 3vw;
-    align-items: center;
-}
-
-h2 {
-    display: block;
-    font-weight: bold;
-}
-
-p {
-    display: block;
-}
-
-label{
-    cursor:default;
-}
-
-.form-control label{
-    color: #FFF;
-}
-
-.d-flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
